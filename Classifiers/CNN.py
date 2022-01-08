@@ -15,7 +15,7 @@ import warnings
 from random import shuffle
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import cv2
-from sklearn.metrics import confusion_matrix , classification_report
+from sklearn.metrics import  classification_report
 
 def set_seed(seed=42):
     np.random.seed(seed)
@@ -39,7 +39,7 @@ sns.countplot(brain_df['Class'])
 
 
 path_list = []
-base_path = '../Images'
+base_path = '..\Images'
 for entry in os.listdir(base_path):
     path_list.append(os.path.join(base_path, entry))
 
